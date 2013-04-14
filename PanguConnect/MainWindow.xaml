@@ -1,0 +1,36 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="PanguConnect.MainWindow"
+        Title="PANGU Connect" Height="626" Width="924">
+    <Grid>
+    	<Image x:Name="img_elv" Margin="292.5,8,359.5,0" Height="256" Stretch="Fill" VerticalAlignment="Top" Width="256"/>
+    	<Button x:Name="btn_Update_Image" Content="Update Image" HorizontalAlignment="Left" Margin="132,0,0,244" VerticalAlignment="Bottom" Width="105" Click="btn_UpdateImage_Click" d:LayoutOverrides="VerticalAlignment"/>
+    	<TextBox x:Name="txt_X" Margin="97.923,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153"/>
+    	<TextBox x:Name="txt_Y" Margin="97.923,178.96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153"/>
+        
+    	<TextBox x:Name="txt_Z" Margin="97.923,204.92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153"/>
+    	<TextBox x:Name="txt_Yaw" Margin="97.923,230.88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153"/>
+    	<TextBox x:Name="txt_Pitch" Margin="97.923,256.84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153"/>
+    	<TextBox x:Name="txt_Roll" Margin="97.923,282.8,0,283.24" TextWrapping="Wrap" Height="21.96" HorizontalAlignment="Left" Width="153" d:LayoutOverrides="VerticalAlignment"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="86.846,153,0,0" TextWrapping="Wrap" Text="X" VerticalAlignment="Top"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="86.846,178.96,0,0" TextWrapping="Wrap" Text="Y" VerticalAlignment="Top"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="86.636,204.92,0,0" TextWrapping="Wrap" Text="Z" VerticalAlignment="Top"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="72.066,230.88,0,0" TextWrapping="Wrap" Text="Yaw" VerticalAlignment="Top"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="67.452,256.84,0,0" TextWrapping="Wrap" Text="Pitch" VerticalAlignment="Top"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="67.452,282.8,0,289.24" TextWrapping="Wrap" Text="Roll" d:LayoutOverrides="Height"/>
+    	<Grid Height="38" VerticalAlignment="Top" Background="#FF05D3F4" HorizontalAlignment="Left" Width="272">
+    		<TextBlock TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Left" Width="83" FontSize="21.333" Margin="4,5,0,-5"><Run Language="en-gb" Text="PANGU"/></TextBlock>
+    		<Button x:Name="btn_Connect" Content="Connect" Margin="87,5,97,11.04" Click="btn_Connect_Click" d:LayoutOverrides="Height" Width="80"/>
+    		<Button x:Name="btn_Disconnect" Content="Disconnect" HorizontalAlignment="Right" Margin="0,5,19,11.04" Width="80" Click="btn_Disconnect_Click" d:LayoutOverrides="Height"/>
+    	</Grid>
+    	<TextBox x:Name="txt_distance" HorizontalAlignment="Left" Margin="97.923,42,0,524.04" TextWrapping="Wrap" Width="153" Height="21.96" Text="10"/>
+    	<Image x:Name="img_main" Margin="585.5,8,66.5,0" Width="256" Height="256" Stretch="Fill" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="30.529,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.075,3.521"><Run Language="en-gb" Text="Distance"/></TextBlock>
+    	<TextBox x:Name="txt_width" HorizontalAlignment="Left" Margin="97.923,67.96,0,498.08" TextWrapping="Wrap" Width="153" Height="21.96" Text="128"/>
+    	<TextBox x:Name="txt_height" HorizontalAlignment="Left" Margin="97.923,102,0,464.04" TextWrapping="Wrap" Width="153" Height="21.96" Text="128"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="30.529,70.96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.075,3.521"><Run Language="en-gb" Text="Width"/></TextBlock>
+    	<TextBlock HorizontalAlignment="Left" Margin="30.529,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.075,3.521"><Run Language="en-gb" Text="Height"/></TextBlock>
+        
+    </Grid>
+</Window>
